@@ -17,6 +17,6 @@ send "y\r"
 expect "Please select \[Y/n\]: "
 send "n\r"
 expect "Please type Yes or no \(with capital Y, default Yes\): "
-send "\r"
+send "Yes\r"
 interact
 EOF
