@@ -1,0 +1,22 @@
+#!/usr/bin/expect
+
+spawn bash /root/cyberpanel.sh
+
+expect "Please enter the number\x5b1-2\x5c: "
+send "1\r"
+expect "Please enter the number\x5b1-3\x5c: "
+send "1\r"
+expect "Full installation \x5bYx2fn\x5c: "
+send "y\r"
+expect "(Default = No) Remote MySQL \[y/N\]: "
+send "n\r"
+expect "Press Enter key to continue with latest version or Enter specific version such as: 1.9.4 , 2.0.1 , 2.0.2 ...etc "
+send "\r"
+expect "Please select \[Y/n\]: "
+send "y\r"
+expect "Please select \[Y/n\]: "
+send "n\r"
+expect "Please type Yes or no \(with capital Y, default Yes\): "
+send "\r"
+interact
+EOF
